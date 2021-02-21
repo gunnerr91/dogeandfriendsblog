@@ -1,0 +1,22 @@
+{
+    "blogs": [
+      {
+        "title": "doge and friends party",
+        "body": "wow much amaze.......",
+        "author": "doge",
+        "id": 1
+      },
+      {
+        "title": "doge is sad",
+        "body": "much sad very sorrow 😥",
+        "author": "doge",
+        "id": 1
+      },
+      {
+        "title": "laziness",
+        "body": "soooo lazy jaaaa!!!",
+        "author": "tartel",
+        "id": 2
+      }
+    ]
+  }

@@ -1,6 +1,6 @@
 import "./bloglist.css";
 
-const BlogList = ({ blogs, title, handleDelete }) => {
+const BlogList = ({ blogs, title }) => {
   return (
     <div className="bloglist">
       <h2>{title}</h2>
@@ -9,7 +9,6 @@ const BlogList = ({ blogs, title, handleDelete }) => {
           <h4>{blog.title}</h4>
           <i>{blog.author}</i>
           <p>{blog.body}</p>
-          <button onClick={() => handleDelete(blog.id)}>delete blog</button>
         </div>
       ))}
     </div>
