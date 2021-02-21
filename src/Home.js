@@ -4,6 +4,7 @@ import BlogList from "./BlogList";
 const Home = () => {
   const [blogs, setBlogs] = useState(null);
   const [isPending, setIsPending] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     setTimeout(() => {
@@ -12,12 +13,18 @@ const Home = () => {
         .then((data) => {
           setBlogs(data);
           setIsPending(false);
+          setError(null);
+        })
+        .catch((err) => {
+          setError(err.message);
+          setIsPending(false);
         });
     }, 2000);
   }, []);
 
   return (
     <div className="home">
+      {error && <h3>{error}</h3>}
       {isPending && <div>loading...</div>}
       {blogs && (
         <>
@@ -27,7 +34,7 @@ const Home = () => {
           />
           <BlogList
             blogs={blogs.filter((blog) => blog.author === "tartel")}
-            title="tartle blogs"
+            title="tartel blogs"
           />
         </>
       )}
