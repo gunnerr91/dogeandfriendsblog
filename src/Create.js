@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 import "./create.css";
 
 const Create = () => {
@@ -6,6 +7,8 @@ const Create = () => {
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState("capybara");
   const [isPending, setIsPending] = useState(false);
+  const history = useHistory();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const blog = { title, body, author };
@@ -15,7 +18,10 @@ const Create = () => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(blog)
-    }).then(() => setIsPending(false));
+    }).then(() => {
+      setIsPending(false);
+      history.push("/");
+    });
   };
 
   return (
