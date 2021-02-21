@@ -1,6 +1,6 @@
 .blog-details h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #e9a81b;
   margin-bottom: 10px;
 }
 .blog-details div {
@@ -9,4 +9,13 @@
 
 .blog-details i {
   font-size: small;
+}
+
+.blog-details button {
+  background: #e9a81b;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
