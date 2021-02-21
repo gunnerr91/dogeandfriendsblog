@@ -5,9 +5,13 @@
 }
 .blog-preview:hover {
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 .blog-preview h4 {
   font-size: 20px;
   color: #e9a81b;
   margin-bottom: 8px;
+}
+.bloglist a {
+  text-decoration: none;
 }

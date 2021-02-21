@@ -23,7 +23,7 @@ const useFetch = (endpoint) => {
             setIsPending(false);
           }
         });
-    }, 2000);
+    }, 500);
     return () => abortController.abort();
   }, [endpoint]);
 
