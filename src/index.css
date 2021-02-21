@@ -5,28 +5,7 @@
   font-family: "MuseoModerno";
   color: #333;
 }
-nav {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
-}
-nav h1 {
-  color: #e9a81b;
-}
-nav .links {
-  margin-left: auto;
-}
-nav a {
-  margin-left: 16px;
-  text-decoration: none;
-  padding: 6px;
-}
-nav a:hover {
-  color: #e9a81b;
-}
+
 .content {
   max-width: 600px;
   margin: 40px auto;
