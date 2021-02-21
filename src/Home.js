@@ -10,18 +10,7 @@ const Home = () => {
     <div className="home">
       {error && <h3>{error}</h3>}
       {isPending && <div>loading...</div>}
-      {blogs && (
-        <>
-          <BlogList
-            blogs={blogs.filter((blog) => blog.author === "doge")}
-            title="doge blogs"
-          />
-          <BlogList
-            blogs={blogs.filter((blog) => blog.author === "tartel")}
-            title="tartel blogs"
-          />
-        </>
-      )}
+      {blogs && <BlogList blogs={blogs} />}
     </div>
   );
 };

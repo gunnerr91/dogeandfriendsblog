@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import "./bloglist.css";
 
-const BlogList = ({ blogs, title }) => {
+const BlogList = ({ blogs }) => {
   return (
     <div className="bloglist">
-      <h2>{title}</h2>
       {blogs.map((blog, index) => (
         <Link to={`/blogs/${blog.id}`} key={index}>
           <div className="blog-preview">
